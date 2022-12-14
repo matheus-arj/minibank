@@ -1,0 +1,25 @@
+### Create a new user
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+  "name": "Matheus",
+  "email": "matheus@matheus.com"
+}
+
+### Find a particular user with a given ID
+GET http://localhost:3000/users/6
+
+
+### Find all users 
+GET http://localhost:3000/users
+
+### Update a user
+PATCH http://localhost:3000/users/6
+Content-Type: application/json
+
+{
+  "name": "Mororo",
+  "email": "mororo@mororo.com"
+}
+

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  minibank_postgres:
+    image: postgres
+    container_name: minibank
+    environment:
+      - POSTGRES_DB=minibank
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5434:5432
+    volumes:
+      - minibank:/var/lib/postgresql/data
+volumes:
+  minibank:
